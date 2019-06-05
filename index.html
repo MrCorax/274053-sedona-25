@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-        <img src="img/logo.svg" width="140" height="71" alt="Седона">
+        <img src="img/logo.svg" width="140" height="71" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -21,7 +21,7 @@
     <main class="container">
       <h1 class="visually-hidden">Welcome to the gorgeous SEDONA</h1>
       <img src="img/background_photo.jpg" width="1200" height="773" alt="Фон">
-      <img src="img/welcome.jpg" width="459" height="353" alt="Добро пожаловать">
+      <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать">
 
       <section class="advantages">
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -40,12 +40,12 @@
               <li>
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-                <img src="img/icon-3.svg" width="74" height="70" alt="бургер">
+                <img src="img/icon-3.svg" width="74" height="70" alt="аппетитный бутерброд">
               </li>
               <li>
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного <br> производства!</p>
-                <img src="img/icon-2.svg" width="64" height="76" alt="сувенир">
+                <img src="img/icon-2.svg" width="64" height="76" alt="сувениры">
               </li>
             </ul>
           </li>
@@ -69,37 +69,58 @@
         </ol>
 
       </section>
-      <section class="interest">
+      <section class="search">
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p>Укажите предпологаемые даты поездки, <br>
           И мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <h3>Поиск гостиницы в Седоне</h3>
-        <img src="img/map.jpg" width="1200" height="593" alt="карта гостиниц">
+        <section class="searchform">
+        <button class="searchform-button" type="button">Поиск гостиницы в Седоне</button>
+        <img src="img/map.jpg" width="1200" height="593" alt="Седона, Коконино-Каунти, штат Аризона, Соединённые Штаты Америки">
+        <h2 class="visually-hidden">Форма выбора гостиниц</h2>
+        <form class="searchform" action="https://echo.htmlacademy.ru" method="post">
+          <p class="searchform-item">
+            <label for="date-in">Дата заезда:</label>
+              <input class="searchform-date-in" type="text" name="date" placeholder="24 АПРЕЛЯ 2019" id="date-in">
+              <button class="calendar" type="button" aria-label="выбор даты заезда"><img src="img/calendar.svg" alt="Календарь"></button>
+          </p>
+          <p class="searchform-item">
+            <label for="date-out">Дата выезда:</label>
+              <input class="searchform-date-out" type="text" name="date" placeholder="29 АПРЕЛЯ 2019" id="date-out">
+              <button class="calendar" type="button" aria-label="выбор даты выезда"><img src="img/calendar.svg" alt="Календарь"></button>
+          </p>
+          <p class="searchform-item">
+            <label for="amount-grown">Взрослые:</label>
+              <button class="amount-plus" type="button" aria-label="добавить"><img src="img/plus.png" alt="Плюс"></button>
+              <input class="searchform-amount-grown" type="number" name="amount" min="1" max="20" step="1" placeholder="2" id="amount-grown">
+              <button class="amount-minus" type="button" aria-label="отнять"><img src="img/minus.png" alt="Минус"></button>
+          </p>
+          <p class="searchform-item">
+            <label for="amount-children">Дети:</label>
+              <button class="amount-plus" type="button" aria-label="добавить"><img src="img/plus.png" alt="Плюс"></button>
+              <input class="searchform-amount-children" type="number" name="amount" min="0" max="15" step="1" placeholder="0" id="amount-children">
+              <button class="amount-minus" type="button" aria-label="отнять"><img src="img/minus.png" alt="Минус"></button>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
+        </section>
       </section>
     </main>
       <footer class="main-footer">
         <b>#VISITSEDONA</b>
         <div class="footer-social">
           <ul>
-          <li><a class="social-button" href="https://twitter.com"><img src="img/t.svg" width="17" height="15" alt="Твиттер"></a></li>
-          <li><a class="social-button" href="https://www.facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-          <li><a class="social-button" href="https://www.youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
+          <li><a class="social-button" href="https://twitter.com" aria-label="Седона в Твиттер"><img src="img/t.svg" width="17" height="15" alt="Седона в Твиттер"></a></li>
+          <li><a class="social-button" href="https://www.facebook.com" aria-label="Седона в Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбук"></a></li>
+          <li><a class="social-button" href="https://www.youtube.com" aria-label="Седона на Ютуб"><img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютуб"></a></li>
           </ul>
         </div>
         <div class="copyright">
           <p>WEBSITE BY</p>
-          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"></a>
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"><img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"></a>
         </div>
       </footer>
-      <section class="searchform">
-        <h2 class="visually-hidden">Форма выбора гостиниц</h2>
-        <p>Дата заезда:</p>
-        <p>Дата выезда:</p>
-        <p>Взрослые:</p>
-        <p>Дети:</p>
-        <!-- место под формы -->
-      </section>
+
 
   </body>
 </html>
