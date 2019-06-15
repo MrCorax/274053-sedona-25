@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA hotels</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html" aria-label="Переход на главную страницу">
@@ -113,23 +116,14 @@
             <p class="catalog-item-price">Гостиница от 4000 Р.
             </p>
             <p class="catalog-item-info">
-              <a class="button" href="Amara-info.html">Подробнее</a>
+              <a class="button button-modal" href="Amara-info.html">Подробнее</a>
             </p>
             <p class="catalog-item-reservation">
-              <a class="button" href="reservation.html">Забронировать</a>
+              <a class="button searchform-button" href="reservation.html">Забронировать</a>
             </p>
-              <img class="catalog-item-stars" src="img/star.svg" width="18" height="17" alt="рейтинг гостиницы 4 звезды">
-              <!-- Обернуть в div, через css вставить картинку, далее размер, повтор и т.д.  -->
-              <!-- ИЛИ -->
-              <!-- <fieldset>
-                <legend>рейтинг: 8,5</legend>
-                <input type="checkbox"   checked>
-                <input type="checkbox"   checked>
-                <input type="checkbox"   checked>
-                <input type="checkbox"   checked>
-
-              </fieldset> -->
-
+            <div class="catalog-item-stars">
+              </div>
+              <img  class="visually-hidden" src="img/star.svg" width="18" height="17" alt="рейтинг мотеля 4 звезды">
             <p class="catalog-item-rating">рейтинг: 8,5</p>
           </li>
           <li class="catalog-item">
@@ -144,12 +138,14 @@
             <p class="catalog-item-price">Гостиница от 3000 Р.
             </p>
             <p class="catalog-item-info">
-              <a class="button" href="Desert-ifo.html">Подробнее</a>
+              <a class="button button-modal" href="Desert-ifo.html">Подробнее</a>
             </p>
             <p class="catalog-item-reservation">
-              <a class="button" href="reservation.html">Забронировать</a>
+              <a class="button searchform-button" href="reservation.html">Забронировать</a>
             </p>
-              <img class="catalog-item-stars" src="img/star.svg" width="18" height="17" alt="рейтинг мотеля 3 звезды">
+            <div class="catalog-item-stars threestars">
+              </div>
+              <img  class="visually-hidden" src="img/star.svg" width="18" height="17" alt="рейтинг мотеля 3 звезды">
               <!-- <fieldset>
                 <legend>рейтинг: 8,5</legend>
                 <input type="checkbox"   checked>
@@ -170,12 +166,14 @@
             <p class="catalog-item-price">Гостиница от 2000 Р.
             </p>
             <p class="catalog-item-info">
-              <a class="button" href="Villas-info.html">Подробнее</a>
+              <a class="button button-modal" href="Villas-info.html">Подробнее</a>
             </p>
             <p class="catalog-item-reservation">
-              <a class="button" href="reservation.html">Забронировать</a>
+              <a class="button searchform-button" href="reservation.html">Забронировать</a>
             </p>
-              <img class="catalog-item-stars" src="img/star.svg" width="18" height="17" alt="рейтинг апартаментов 2 звезды">
+            <div class="catalog-item-stars twostars">
+              </div>
+              <img class="visually-hidden" src="img/star.svg" width="18" height="17" alt="рейтинг апартаментов 2 звезды">
               <!-- <fieldset>
                 <legend>рейтинг: 8,5</legend>
                 <input type="checkbox"   checked>
@@ -192,14 +190,18 @@
       <b>#VISITSEDONA</b>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="https://twitter.com" aria-label="Седона в Твиттер"><img src="img/t.svg" width="17" height="15" alt="Седона в Твиттер"></a></li>
-          <li><a class="social-button" href="https://www.facebook.com" aria-label="Седона в Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбук"></a></li>
-          <li><a class="social-button" href="https://www.youtube.com" aria-label="Седона на Ютуб"><img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютуб"></a></li>
+        <li><a class="social-button" href="https://twitter.com" aria-label="Седона в Твиттер">Твиттер</a></li>
+        <li><a class="social-button" href="https://www.facebook.com" aria-label="Седона в Фейсбук">Фейсбук</a></li>
+        <li><a class="social-button" href="https://www.youtube.com" aria-label="Седона на Ютуб">Ютуб</a></li>
+          <!-- <img src="img/t.svg" width="17" height="15" alt="Седона в Твиттер">
+          <img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбук">
+          <img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютуб"> -->
         </ul>
       </div>
       <div class="copyright">
         <p>WEBSITE BY</p>
-        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="разработчик HTML Academy"><img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"></a>
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="разработчик HTML Academy">HTML Academy</a>
+        <!-- <img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"> -->
       </div>
     </footer>
 

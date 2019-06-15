@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>город SEDONA</title>
+    <title>SEDONA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -20,17 +23,23 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Welcome to the gorgeous SEDONA</h1>
-      <img src="img/background_photo.jpg" width="1200" height="773" alt="Фон">
-      <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать">
+      <div class="mainbackground">
+        <!-- <img src="img/background_photo.jpg" width="1200" height="773" alt="Фон"> -->
+        <div class="welcome">
+          <!-- <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать"> -->
+        </div>
+      </div>
       <section class="advantages">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен</p>
+        <div class="best-sity">
+          <h2>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен</p>
+        </div>
         <ol type="1" class="advantages-list">
           <li class="advantages-item">
             <h3>Настоящий городок</h3>
             <p>Седона - Не аттракцион для туристов, там течет своя жизнь</p>
             <img src="img/city.jpg" width="800" height="256" alt="Городок Седона">
-            <ul class="advantages-item-else">
+            <ul class="advantages-list">
               <li>
                 <h4>Жильё</h4>
                 <p>Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
@@ -49,7 +58,7 @@
             </ul>
           </li>
           <li class="advantages-item">
-            <h3>Там есть Мост дьявола</h3>
+            <h3>Там есть<br> Мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
             <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
@@ -72,50 +81,50 @@
         <p>Укажите предпологаемые даты поездки, <br>
           И мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <section class="searchform">
-        <button class="searchform-button" type="button">Поиск гостиницы в Седоне</button>
-        <img src="img/map.jpg" width="1200" height="593" alt="Седона, Коконино-Каунти, штат Аризона, Соединённые Штаты Америки">
-        <h2 class="visually-hidden">Форма выбора гостиниц</h2>
-        <form class="searchform" action="https://echo.htmlacademy.ru" method="post">
-          <p class="searchform-item">
-            <label for="date-in">Дата заезда:</label>
-              <input class="searchform-date-in" type="text" name="date" placeholder="24 АПРЕЛЯ 2019" id="date-in">
-
-          </p>
-          <p class="searchform-item">
-            <label for="date-out">Дата выезда:</label>
-              <input class="searchform-date-out" type="text" name="date" placeholder="29 АПРЕЛЯ 2019" id="date-out">
-
-          </p>
-          <p class="searchform-item">
-            <label for="amount-grown">Взрослые:</label>
-
-              <input class="searchform-amount-grown" type="number" name="amount" min="1" max="20" step="1" placeholder="2" id="amount-grown">
-
-          </p>
-          <p class="searchform-item">
-            <label for="amount-children">Дети:</label>
-
-              <input class="searchform-amount-children" type="number" name="amount" min="0" max="15" step="1" placeholder="0" id="amount-children">
-
-          </p>
-          <button type="submit">Найти</button>
-        </form>
-        </section>
+        <button class="button searchform-button search-hotels-button" type="button">Поиск гостиницы в Седоне</button>
+        <div class="only-map">
+          <img src="img/map.jpg" width="1200" height="593" alt="Седона, Коконино-Каунти, штат Аризона, Соединённые Штаты Америки">
+        </div>
       </section>
-    </main>
+        <section class="modal modal-searchform">
+         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+         <form class="searchform" action="https://echo.htmlacademy.ru" method="post">
+           <p class="searchform-item">
+             <label for="date-in">Дата заезда:</label>
+               <input class="searchform-date-in" type="text" name="date" placeholder="24 АПРЕЛЯ 2019" id="date-in">
+           </p>
+           <p class="searchform-item">
+             <label for="date-out">Дата выезда:</label>
+               <input class="searchform-date-out" type="text" name="date" placeholder="29 АПРЕЛЯ 2019" id="date-out">
+           </p>
+           <p class="searchform-item">
+             <label for="amount-grown">Взрослые:</label>
+               <input class="searchform-amount-grown" type="number" name="amount" min="1" max="20" step="1" placeholder="2" id="amount-grown">
+           </p>
+           <p class="searchform-item">
+             <label for="amount-children">Дети:</label>
+               <input class="searchform-amount-children" type="number" name="amount" min="0" max="15" step="1" placeholder="0" id="amount-children">
+           </p>
+           <button class="button button-modal" type="submit">Найти</button>
+         </form>
+         </section>
+      </main>
       <footer class="main-footer">
         <b>#VISITSEDONA</b>
         <div class="footer-social">
           <ul>
-          <li><a class="social-button" href="https://twitter.com" aria-label="Седона в Твиттер"><img src="img/t.svg" width="17" height="15" alt="Седона в Твиттер"></a></li>
-          <li><a class="social-button" href="https://www.facebook.com" aria-label="Седона в Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбук"></a></li>
-          <li><a class="social-button" href="https://www.youtube.com" aria-label="Седона на Ютуб"><img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютуб"></a></li>
+          <li><a class="social-button" href="https://twitter.com" aria-label="Седона в Твиттер">Твиттер</a></li>
+          <li><a class="social-button" href="https://www.facebook.com" aria-label="Седона в Фейсбук">Фейсбук</a></li>
+          <li><a class="social-button" href="https://www.youtube.com" aria-label="Седона на Ютуб">Ютуб</a></li>
+            <!-- <img src="img/t.svg" width="17" height="15" alt="Седона в Твиттер">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбук">
+            <img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютуб"> -->
           </ul>
         </div>
         <div class="copyright">
           <p>WEBSITE BY</p>
-          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="разработчик HTML Academy"><img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"></a>
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="разработчик HTML Academy">HTML Academy</a>
+          <!-- <img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"> -->
         </div>
       </footer>
 

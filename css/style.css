@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.catalog-page {
+  color: #696969;
+
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+  font-weight: bold;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+ color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #b2b2b2;
+}
+
+.mainbackground {
+  display: inline-block;
+  width: 1200px;
+  height: 600px;
+  background-image: url("../img/background_photo.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #253a40;
+}
+
+.welcome {
+  display: inline-block;
+  width: 1200px;
+  height: 615px;
+  background-image: url("../img/welcome.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item,
+.advantages h2,
+.advantages p {
+  text-align: center;
+}
+
+.advantages-item h3,
+.advantages-item h4 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.advantages p,
+.advantages-item p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #a0a0a0;
+
+  background-color: #ffffff;
+}
+
+.best-sity {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("../img/best-pattern.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.search {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.search p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+
+.button {
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.search-hotels-button {
+  width: 568px;
+  height: 86px;
+  text-transform: uppercase;
+}
+
+.searchform-button {
+  background-color: #766357;
+}
+
+.searchform-button:hover,
+.searchform-button:focus {
+  background-color: #604e43;
+}
+
+.searchform-button:active {
+  background-color:#503e33;
+  color: #857871;
+}
+
+.searchform-item {
+  font-weight: bold;
+}
+
+.searchform input {
+  font: inherit;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.modal {
+  display: none;
+}
+
+.button-modal {
+  background-color: #81b3d2;
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  background-color: #669ec0;
+}
+
+.button-modal:active {
+  background-color:#5496bd;
+  color: #88b6d1;
+}
+
+.main-footer {
+  color: #000000;
+
+  background-color: #fdfdfd;
+  background-image: url("../img/pattern-light.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #000000;
+  font-weight: bold;
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: #669ec0;
+}
+
+.social-button:active {
+  color: #5496bd;
+}
+
+.copyright {
+  text-align: right;
+}
+
+.copyright-logo {
+  color: #231f20;
+}
+
+.copyright-logo:hover,
+.copyright-logo:focus {
+  color: #81b3d2;
+}
+
+.copyright-logo:active {
+  color: #bdbbbc;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog-list h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.catalog-list h3:hover,
+.catalog-item h3:focus {
+  color: #81b3d2;
+}
+
+.catalog-list h3:active {
+  color: #b2b2b2;
+}
+
+.catalog-item {
+
+  border-top: 1px solid #e5e5e5;
+  background-color: #fefefe;
+
+}
+
+.catalog-item-info a,
+.catalog-item-reservation a {
+  font-size: 14px;
+  line-height: 21px;
+  padding:  5px 10px;
+}
+
+.catalog-item-rating {
+  background-color: #f2f2f2;
+  padding:  5px 10px;
+}
+
+.catalog-item-stars {
+  width: 70px;
+  height: 25px;
+  background-image: url("../img/star.svg");
+  background-repeat: round;
+}
+
+.threestars {
+  width: 55px;
+  height: 25px;
+}
+
+.twostars {
+  width: 40px;
+  height: 25px;
+}
+
+.site-navigation-current {
+  color: #766357;
+}
