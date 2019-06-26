@@ -36,12 +36,34 @@ a {
 }
 
 .main-navigation {
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #ffffff; */
+
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 71px;
+  /* временно для стилизации */
+  background-color: green;
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+  min-height: 55px;
   list-style: none;
   font-weight: bold;
+  /* временно для стилизации */
+  background-color: yellow;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -58,22 +80,26 @@ a {
 }
 
 .mainbackground {
-  display: inline-block;
+
   width: 1200px;
-  height: 600px;
+
   background-image: url("../img/background_photo.jpg");
   background-repeat: no-repeat;
-
   background-color: #253a40;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .welcome {
-  display: inline-block;
-  width: 1200px;
-  height: 615px;
+
+  height: 510px;
   background-image: url("../img/welcome.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.advantages {
+  margin-bottom: 55px;
 }
 
 .advantages-list {
@@ -107,7 +133,9 @@ a {
 }
 
 .best-sity {
+  display: block;
   color: #000000;
+  margin-bottom: 55px;
 
   background-color: #ffffff;
   background-image: url("../img/best-pattern.png");
@@ -190,6 +218,7 @@ a {
 }
 
 .main-footer {
+  padding: 35px 0;
   color: #000000;
 
   background-color: #fdfdfd;
@@ -198,8 +227,25 @@ a {
   background-position: 0 0;
 }
 
+.main-footer .container {
+  display: flex;
+
+}
+
+.hashtag {
+  margin: 0;
+  width: 240px;
+  margin-left: 73px;
+  margin-right: 89px;
+  /* временно для стилизации */
+  background-color: red;
+}
+
 .footer-social {
-  text-align: center;
+  margin: 0;
+  width: 400px;
+  /* временно для стилизации */
+  background-color: red;
 }
 
 .footer-social ul {
@@ -221,7 +267,12 @@ a {
 }
 
 .copyright {
-  text-align: right;
+  margin: 0;
+  width: 240px;
+  margin-left: auto;
+  margin-right: 73px;
+  /* временно для стилизации */
+  background-color: red;
 }
 
 .copyright-logo {
@@ -237,8 +288,22 @@ a {
   color: #bdbbbc;
 }
 
+.search-results {
+  margin-bottom: 30px;
+}
+
+.catalog {
+  display: flex;
+}
+
 .catalog ul {
   list-style: none;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+
 }
 
 .catalog-list h3 {
@@ -258,7 +323,9 @@ a {
 }
 
 .catalog-item {
-
+  width: 1056px;
+  margin-left: 73px;
+  margin-bottom: 30px;
   border-top: 1px solid #e5e5e5;
   background-color: #fefefe;
 
@@ -295,4 +362,10 @@ a {
 
 .site-navigation-current {
   color: #766357;
+}
+
+.filters {
+  color: #ffffff;
+  background-image: url("../img/filter_background.png");
+  background-repeat: no-repeat;
 }
