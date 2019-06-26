@@ -29,36 +29,36 @@
         <h2 class="visually-hidden">Форма выбора гостиниц</h2>
         <!-- <img src="img/filter_background.png" width="1200" height="562" alt="фон формы выбора гостиниц"> -->
         <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="resultcost1.value=costday1.value; resultcost2.value=costday2.value" >
-          <fieldset>
+          <fieldset class="type-of-filter">
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked id="pool">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked id="pool">
                 <label for="pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="WI-FI" id="WI-FI">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="WI-FI" id="WI-FI">
                 <label for="WI-FI">WI-FI</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="type-of-filter">
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked id="hotel">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" checked id="hotel">
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Motel" checked id="Motel">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="Motel" checked id="Motel">
                 <label for="Motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Apartments" checked id="Apartments">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="Apartments" checked id="Apartments">
                 <label for="Apartments">Апартаменты</label>
               </li>
             </ul>
@@ -81,24 +81,22 @@
         <p>Сортировка:</p>
         <form class="search-results-type" action="https://echo.htmlacademy.ru" method="get">
           <ul>
-            <li class="search-results-item">
-              <label>По цене
-              <input class="visually-hidden sorting-radio" type="radio" name="sorting-radio-button" value="По цене" checked>
-            </label>
+            <li class="search-results-item-current">
+            По цене
             </li>
             <li class="search-results-item">
-              <label>По типу
-              <input class="visually-hidden sorting-radio" type="radio" name="sorting-radio-button" value="По типу">
-            </label>
+            <a href="#">По типу</a>
             </li>
             <li class="search-results-item">
-              <label>По рейтингу
-              <input class="visually-hidden sorting-radio" type="radio" name="sorting-radio-button" value="По рейтингу">
-            </label>
+            <a href="#">По рейтингу</a>
+            </li>
+            <li>
+              <a href="#">По возрастанию</a>
+            </li>
+            <li>
+              <a href="#">По убыванию</a>
             </li>
           </ul>
-          <button class="button-up" type="button" aria-label="отсортировать по выбранному максимальному параметру"><img src="img/icon-up-dir.svg" alt="максимальный параметр"></button>
-          <button class="button-up" type="button" aria-label="отсортировать по выбранному минимальному параметру"><img src="img/icon-down-dir.svg" alt="минимальный параметр"></button>
 
         </form>
 
